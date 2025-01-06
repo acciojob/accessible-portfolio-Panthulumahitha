@@ -1,16 +1,47 @@
 <!DOCTYPE html>
-
-<html>
-
+<html lang="en">
 <head>
-	<link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accessible Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
-
 <body>
-	<!-- the entire body must be written by student -->
-    <script type="text/javascript" src="./script.js">
-</script>
+    <header>
+        <h1 role="heading">My Accessible Portfolio</h1>
+        <nav role="navigation" aria-label="Main Navigation">
+            <ul role="list">
+                <li role="listitem"><a href="#about">About Me</a></li>
+                <li role="listitem"><a href="#skills">Skills</a></li>
+                <li role="listitem"><a href="#projects">Projects</a></li>
+            </ul>
+        </nav>
+    </header>
 
+    <main>
+        <section id="about">
+            <h2 role="heading">About Me</h2>
+            <img src="profile.jpg" alt="A professional photo of me" role="img" width="200">
+            <p>I am a software developer with experience in web development, problem-solving, and building accessible websites.</p>
+        </section>
+
+        <section id="skills">
+            <h2 role="heading">Skills</h2>
+            <ul role="list">
+                <li role="listitem">JavaScript</li>
+                <li role="listitem">HTML & CSS</li>
+                <li role="listitem">Accessibility Development</li>
+            </ul>
+        </section>
+
+        <section id="projects">
+            <h2 role="heading">Projects</h2>
+            <ul role="list">
+                <li role="listitem">Portfolio Website</li>
+                <li role="listitem">E-commerce Application</li>
+                <li role="listitem">Accessible Blog Platform</li>
+            </ul>
+        </section>
+    </main>
 </body>
-
 </html>
